@@ -1,0 +1,61 @@
+{
+  "name": "addhoc",
+  "version": "0.0.1",
+  "description": "Handy little helper to create proper HOC functions complete with hoisted statics and forwarded refs",
+  "main": "./lib/index",
+  "browser": "./lib/index",
+  "module": "./index",
+  "react-native": "./index",
+  "scripts": {
+    "build": "babel -d lib index.js",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint --fix *.js",
+    "test": "nyc mocha --require setup-env test/*.test.js",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/godaddy/addhoc.git"
+  },
+  "keywords": [
+    "react",
+    "hoc",
+    "component",
+    "ref"
+  ],
+  "author": "Jonathan Keslin <github@jonathankeslin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godaddy/addhoc/issues"
+  },
+  "homepage": "https://github.com/godaddy/addhoc#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "assume": "^2.1.0",
+    "babel-eslint": "^10.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "eslint": "^5.13.0",
+    "eslint-config-godaddy-react": "^3.0.0",
+    "eslint-plugin-json": "^1.3.2",
+    "eslint-plugin-mocha": "^5.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jsdom": "^12.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0",
+    "prop-types": "^15.7.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "setup-env": "^1.2.2"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  }
+}
