@@ -1,7 +1,7 @@
 # addhoc
 
 [![Build Status](https://travis-ci.com/godaddy/addhoc.svg?branch=master)](https://travis-ci.com/godaddy/addhoc)
-[![Coverage Status](https://coveralls.io/repos/github/godaddy/addhoc/badge.svg?branch=master)](https://coveralls.io/github/godaddy/addhoc?branch=master)
+[![codecov](https://codecov.io/gh/godaddy/addhoc/branch/master/graph/badge.svg)](https://codecov.io/gh/godaddy/addhoc)
 
 Handy little helper to create proper HOC functions complete with hoisted statics and forwarded refs
 

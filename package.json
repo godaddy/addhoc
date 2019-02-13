@@ -12,7 +12,7 @@
     "lint": "eslint --fix *.js",
     "test": "nyc mocha --require setup-env test/*.test.js",
     "posttest": "npm run lint",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,7 @@
     "@babel/register": "^7.0.0",
     "assume": "^2.1.0",
     "babel-eslint": "^10.0.1",
-    "coveralls": "^3.0.2",
+    "codecov": "^3.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint": "^5.13.0",
