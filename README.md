@@ -1,7 +1,7 @@
 # addhoc
 
 [![Build Status](https://travis-ci.com/godaddy/addhoc.svg?branch=master)](https://travis-ci.com/godaddy/addhoc)
-[![codecov](https://codecov.io/gh/godaddy/addhoc/branch/master/graph/badge.svg)](https://codecov.io/gh/godaddy/addhoc)
+[![codecov](https://codecov.io/gh/godaddy/addhoc/branch/master/graph/badge.svg)](https://codecov.io/gh/godaddy/addhoc) [![Greenkeeper badge](https://badges.greenkeeper.io/godaddy/addhoc.svg)](https://greenkeeper.io/)
 
 Handy little helper to create proper HOC functions complete with hoisted statics and forwarded refs
 
