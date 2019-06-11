@@ -59,6 +59,10 @@ export default function addhoc(renderFn, name = 'WithHOC', ...extraHOCArgs) {
     // Also hoist statics onto forward ref for convenience
     hoistNonReactStatics(forwardRef, WrappedComponent);
 
+    // Wrap display name per
+    // https://reactjs.org/docs/forwarding-refs.html#displaying-a-custom-name-in-devtools
+    forwardRef.displayName = `ForwardRef(${name}/${getDisplayName(WrappedComponent)})`;
+
     return forwardRef;
   };
 }
