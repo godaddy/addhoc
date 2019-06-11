@@ -81,7 +81,7 @@ describe('addhoc', function () {
       </div>, 'WithDiv');
 
     const TestComponentWithDiv = withDiv(TestComponent);
-    assume(TestComponentWithDiv.displayName).equals('forwardRef(WithDiv/TestComponent)');
+    assume(TestComponentWithDiv.displayName).equals('ForwardRef(WithDiv/TestComponent)');
   });
 
   it('arguments the displayName of the returned Component when no HOC name is set', function () {
@@ -92,7 +92,7 @@ describe('addhoc', function () {
       </div>);
 
     const TestComponentWithDiv = withDiv(TestComponent);
-    assume(TestComponentWithDiv.displayName).equals('forwardRef(WithHOC/TestComponent)');
+    assume(TestComponentWithDiv.displayName).equals('ForwardRef(WithHOC/TestComponent)');
   });
 
   it('can create a HOC that uses the React 16 context API', function () {

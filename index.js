@@ -61,7 +61,7 @@ export default function addhoc(renderFn, name = 'WithHOC', ...extraHOCArgs) {
 
     // Wrap display name per
     // https://reactjs.org/docs/forwarding-refs.html#displaying-a-custom-name-in-devtools
-    forwardRef.displayName = `forwardRef(${name}/${getDisplayName(WrappedComponent)})`;
+    forwardRef.displayName = `ForwardRef(${name}/${getDisplayName(WrappedComponent)})`;
 
     return forwardRef;
   };
