@@ -73,6 +73,28 @@ describe('addhoc', function () {
     assume(tree.exists('WithDiv(TestComponent)')).is.true();
   });
 
+  it('arguments the displayName of the returned Component when a custom HOC name is set', function () {
+    const TestComponent = () => <div />;
+    const withDiv = addhoc(getWrappedComponent =>
+      <div>
+        { getWrappedComponent() }
+      </div>, 'WithDiv');
+
+    const TestComponentWithDiv = withDiv(TestComponent);
+    assume(TestComponentWithDiv.displayName).equals('forwardRef(WithDiv/TestComponent)');
+  });
+
+  it('arguments the displayName of the returned Component when no HOC name is set', function () {
+    const TestComponent = () => <div/>;
+    const withDiv = addhoc(getWrappedComponent =>
+      <div>
+        { getWrappedComponent() }
+      </div>);
+
+    const TestComponentWithDiv = withDiv(TestComponent);
+    assume(TestComponentWithDiv.displayName).equals('forwardRef(WithHOC/TestComponent)');
+  });
+
   it('can create a HOC that uses the React 16 context API', function () {
     const TestComponent = props => <span>{ props.value }</span>;
     TestComponent.propTypes = {
