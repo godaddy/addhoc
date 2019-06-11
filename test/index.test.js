@@ -73,7 +73,7 @@ describe('addhoc', function () {
     assume(tree.exists('WithDiv(TestComponent)')).is.true();
   });
 
-  it('arguments the displayName of the returned Component when a custom HOC name is set', function () {
+  it('augments the displayName of the returned Component when a custom HOC name is set', function () {
     const TestComponent = () => <div />;
     const withDiv = addhoc(getWrappedComponent =>
       <div>
@@ -84,7 +84,7 @@ describe('addhoc', function () {
     assume(TestComponentWithDiv.displayName).equals('ForwardRef(WithDiv/TestComponent)');
   });
 
-  it('arguments the displayName of the returned Component when no HOC name is set', function () {
+  it('augments the displayName of the returned Component when no HOC name is set', function () {
     const TestComponent = () => <div/>;
     const withDiv = addhoc(getWrappedComponent =>
       <div>
