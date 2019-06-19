@@ -1,5 +1,9 @@
 # `addhoc`
 
+## 1.1.1
+
+- [dist] Update dependencies
+
 ## 1.1.0
 
 - [fix] Added missing displayName assignment
