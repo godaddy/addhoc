@@ -41,7 +41,7 @@
     "codecov": "^3.5.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-godaddy-react": "^5.0.0",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
