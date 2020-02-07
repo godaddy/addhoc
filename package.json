@@ -42,7 +42,7 @@
     "@types/react": "^16.8.6",
     "assume": "^2.2.0",
     "babel-eslint": "^10.0.2",
-    "codecov": "^3.5.0",
+    "codecov": "^3.6.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.0.1",
