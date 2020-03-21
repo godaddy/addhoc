@@ -61,7 +61,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "hoist-non-react-statics": "^3.3.0"
+    "hoist-non-react-statics": "^3.3.2"
   },
   "peerDependencies": {
     "react": "^16.0.0"
