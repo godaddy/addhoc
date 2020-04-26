@@ -52,7 +52,7 @@
     "eslint-plugin-mocha": "^6.0.0",
     "eslint-plugin-react": "^7.14.2",
     "jsdom": "^16.0.1",
-    "mocha": "^7.0.1",
+    "mocha": "^7.1.2",
     "nyc": "^15.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
