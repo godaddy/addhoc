@@ -1,5 +1,9 @@
 # `addhoc`
 
+## 1.2.1
+
+- [dist] Update dependencies
+
 ## 1.2.0
 
 - [feat] Add TypeScript typings (thanks @shawnkoon!)
