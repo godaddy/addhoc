@@ -6,14 +6,11 @@
   "browser": "./lib/index",
   "module": "./index",
   "react-native": "./index",
-  "types": "./index.d.ts",
   "scripts": {
     "build": "babel -d lib index.js",
     "prepublishOnly": "npm run build",
     "lint": "eslint --fix *.js",
-    "test:types": "tsc --noEmit ./index.d.ts",
-    "test:mocha": "nyc mocha --require setup-env test/*.test.js",
-    "test": "npm run test:mocha && npm run test:types",
+    "test": "nyc mocha --require setup-env test/*.test.js",
     "posttest": "npm run lint",
     "report-coverage": "nyc report --reporter=lcov"
   },
@@ -56,8 +53,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "setup-env": "^1.2.3",
-    "typescript": "^3.9.7"
+    "setup-env": "^1.2.3"
   },
   "dependencies": {
     "hoist-non-react-statics": "^3.3.2"
