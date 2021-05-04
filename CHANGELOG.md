@@ -1,5 +1,7 @@
 # `addhoc`
 
+## 1.3.0
+
 - [dist] Use GitHub Actions for CI/CD
 - [fix] Fix typings in JSDoc
 - [dist] Drop standalone typings file as JSDoc types should be sufficient
