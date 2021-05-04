@@ -138,6 +138,7 @@ describe('addhoc', function () {
     const TestComponentWithDiv = withDiv(TestComponent);
     class TestRefComponent extends React.Component {
       constructor(...args) {
+        // @ts-expect-error
         super(...args);
         this.componentRef = React.createRef();
         this.state = {

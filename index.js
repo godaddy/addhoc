@@ -11,13 +11,13 @@ import hoistNonReactStatics from 'hoist-non-react-statics';
 /**
  * @callback getWrappedComponentFn
  * @param {Object} extraProps A set of extra props, if any, to add to the wrapped component
- * @returns {React.Component} The component to wrap with your HOC
+ * @returns {React.ReactElement} The component to wrap with your HOC
  */
 /**
  * @callback renderFn
  * @param {getWrappedComponentFn} getWrappedComponent A function to get the component being wrapped
  * @param {...any} [extraHOCArgs] Any additional arguments that you passed into addhoc will be passed through
- * @returns {React.Component} A React component tree that contains the wrapped component
+ * @returns {React.ReactElement} A React component tree that contains the wrapped component
  */
 /**
  * Handy little helper to create proper HOC functions complete with hoisted statics and forwarded refs
@@ -70,7 +70,7 @@ export default function addhoc(renderFn, name = 'WithHOC', ...extraHOCArgs) {
 /**
  * Gets display name of a given component
  *
- * @param {React.Component} WrappedComponent The component to retrieve a display name for
+ * @param {React.ComponentType} WrappedComponent The component to retrieve a display name for
  * @returns {String} The display name of the given component, or `Component` by default
  * @private
  */
