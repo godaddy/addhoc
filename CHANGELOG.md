@@ -1,5 +1,9 @@
 # `addhoc`
 
+## 1.3.2
+
+- [dist] Update dependencies
+
 ## 1.3.1
 
 - [dist] Update dependencies
