@@ -1,5 +1,10 @@
 # `addhoc`
 
+## 2.0.0
+
+- [dist] Drop React 16 support
+- [dist] Update dependencies
+
 ## 1.3.2
 
 - [dist] Update dependencies
@@ -45,4 +50,3 @@
 ## 1.0.0
 
 - Initial release
-
