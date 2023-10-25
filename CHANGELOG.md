@@ -1,5 +1,9 @@
 # `addhoc`
 
+## 2.1.0
+
+- [dist] Relax peer deps for React 18
+
 ## 2.0.0
 
 - [dist] Drop React 16 support
