@@ -1,6 +1,6 @@
 {
   "name": "addhoc",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Handy little helper to create proper HOC functions complete with hoisted statics and forwarded refs",
   "main": "./lib/index",
   "browser": "./lib/index",
